@@ -62,7 +62,7 @@ def run_lora(args, clip_model, logit_scale, dataset, train_loader, val_loader, t
     
     list_lora_layers = apply_lora(args, clip_model)
     clip_model = clip_model.cuda() 
-    clip_ema = ModelEMA(clip_model)
+    # clip_ema = ModelEMA(clip_model)
     
     if args.eval_only:
         load_lora(args, list_lora_layers)
@@ -86,7 +86,7 @@ def run_lora(args, clip_model, logit_scale, dataset, train_loader, val_loader, t
     while count_iters < total_iters:
         clip_model.train()
         acc_train = 0
-        acc_train_ema = 0
+        # acc_train_ema = 0
         tot_samples = 0
         loss_epoch = 0.
         if args.encoder == 'vision': 
@@ -123,23 +123,23 @@ def run_lora(args, clip_model, logit_scale, dataset, train_loader, val_loader, t
             scheduler.step()  
 
             # only calculate acc after model update
-            clip_ema.update(clip_model)
-            if args.encoder == 'text' or args.encoder == 'both':
-                with torch.amp.autocast(device_type="cuda", dtype=torch.float16):
-                    class_embeddings_ema = clip_ema.ema.encode_text(texts)
-                text_features_ema = class_embeddings_ema/class_embeddings_ema.norm(dim=-1, keepdim=True)
+            # clip_ema.update(clip_model)
+            # if args.encoder == 'text' or args.encoder == 'both':
+            #     with torch.amp.autocast(device_type="cuda", dtype=torch.float16):
+            #         class_embeddings_ema = clip_ema.ema.encode_text(texts)
+            #     text_features_ema = class_embeddings_ema/class_embeddings_ema.norm(dim=-1, keepdim=True)
                 
-            if args.encoder == 'vision' or args.encoder == 'both':
-                with torch.amp.autocast(device_type="cuda", dtype=torch.float16):
-                    image_features_ema = clip_ema.ema.encode_image(images)
-            else:
-                with torch.no_grad():
-                    with torch.amp.autocast(device_type="cuda", dtype=torch.float16):
-                        image_features_ema = clip_ema.ema.encode_image(images)
-            image_features_ema = image_features_ema/image_features_ema.norm(dim=-1, keepdim=True)
+            # if args.encoder == 'vision' or args.encoder == 'both':
+            #     with torch.amp.autocast(device_type="cuda", dtype=torch.float16):
+            #         image_features_ema = clip_ema.ema.encode_image(images)
+            # else:
+            #     with torch.no_grad():
+            #         with torch.amp.autocast(device_type="cuda", dtype=torch.float16):
+            #             image_features_ema = clip_ema.ema.encode_image(images)
+            # image_features_ema = image_features_ema/image_features_ema.norm(dim=-1, keepdim=True)
             
-            cosine_similarity_ema = logit_scale * image_features_ema @ text_features_ema.t()
-            acc_train_ema += cls_acc(cosine_similarity_ema, target) * target.shape[0]
+            # cosine_similarity_ema = logit_scale * image_features_ema @ text_features_ema.t()
+            # acc_train_ema += cls_acc(cosine_similarity_ema, target) * target.shape[0]
 
             count_iters += 1
             
@@ -148,11 +148,11 @@ def run_lora(args, clip_model, logit_scale, dataset, train_loader, val_loader, t
             
         if count_iters < total_iters:
             acc_train /= tot_samples
-            acc_train_ema /= tot_samples
+            # acc_train_ema /= tot_samples
             loss_epoch /= tot_samples
             current_lr = scheduler.get_last_lr()[0]
-            # print('LR: {:.6f}, Acc: {:.4f}, Loss: {:.4f}'.format(current_lr, acc_train, loss_epoch))
-            print('LR: {:.6f}, Acc: {:.4f}, Acc_ema: {:.4f}, Loss: {:.4f}'.format(current_lr, acc_train, acc_train_ema, loss_epoch))
+            print('LR: {:.6f}, Acc: {:.4f}, Loss: {:.4f}'.format(current_lr, acc_train, loss_epoch))
+            # print('LR: {:.6f}, Acc: {:.4f}, Acc_ema: {:.4f}, Loss: {:.4f}'.format(current_lr, acc_train, acc_train_ema, loss_epoch))
         
         # Eval
         if VALIDATION:
@@ -163,8 +163,8 @@ def run_lora(args, clip_model, logit_scale, dataset, train_loader, val_loader, t
     
     acc_test = evaluate_lora(args, clip_model, test_loader, dataset)
     print("**** Final test accuracy: {:.2f}. ****".format(acc_test))
-    acc_test_ema = evaluate_lora(args, clip_ema.ema, test_loader, dataset)
-    print("**** Final test ema accuracy: {:.2f}. ****".format(acc_test_ema))
+    # acc_test_ema = evaluate_lora(args, clip_ema.ema, test_loader, dataset)
+    # print("**** Final test ema accuracy: {:.2f}. ****".format(acc_test_ema))
     
     if args.save_path != None:
         save_lora(args, list_lora_layers)
