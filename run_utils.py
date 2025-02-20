@@ -29,7 +29,7 @@ def get_arguments():
     parser.add_argument('--n_iters', default=500, type=int)
     parser.add_argument('--batch_size', default=32, type=int)
     # LoRA arguments
-    parser.add_argument('--position', type=str, default='all', choices=['bottom', 'mid', 'up', 'half-up', 'half-bottom', 'all', 'top3'], help='where to put the LoRA modules')
+    parser.add_argument('--position', type=str, default='all', choices=['bottom', 'mid', 'up', 'half-up', 'half-bottom', 'all', 'top3', 'top6', 'top9'], help='where to put the LoRA modules')
     parser.add_argument('--encoder', type=str, choices=['text', 'vision', 'both'], default='both')
     parser.add_argument('--params', metavar='N', type=str, nargs='+', default=['q', 'k', 'v'], help='list of attention matrices where putting a LoRA') 
     parser.add_argument('--r', default=2, type=int, help='the rank of the low-rank matrices')

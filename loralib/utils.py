@@ -11,6 +11,8 @@ INDEX_POSITIONS_TEXT = {
     'top1': [11],
     'top2': [10, 11],
     'top3': [9, 10, 11],
+    'top6': [6, 7, 8, 9, 10, 11],
+    'top9': [3, 4, 5, 6, 7, 8, 9, 10, 11],
     'bottom': [0, 1, 2, 3],
     'mid': [4, 5, 6, 7],
     'up': [8, 9, 10, 11],
@@ -23,6 +25,8 @@ INDEX_POSITIONS_VISION = {
     'ViT-B/16': {
         'top': [11],
         'top3': [9, 10, 11],
+        'top6': [6, 7, 8, 9, 10, 11],
+        'top9': [3, 4, 5, 6, 7, 8, 9, 10, 11],
         'bottom': [0, 1, 2, 3],
         'mid': [4, 5, 6, 7],
         'up': [8, 9, 10, 11],
@@ -233,4 +237,4 @@ def load_lora(args, list_lora_layers):
             layer.proj.w_lora_A.data.copy_(layer_weights['proj']['w_lora_A'])
             layer.proj.w_lora_B.data.copy_(layer_weights['proj']['w_lora_B'])
 
-    print(f'LoRA weights loaded from {load_path}')
+    print(f'LoRA weights loaded from {load_path}')  
