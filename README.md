@@ -38,6 +38,12 @@ CUDA_VISIBLE_DEVICES=3 python main.py --root_path /home/shenxi/Datasets --datase
 
 CUDA_VISIBLE_DEVICES=4 python main.py --root_path /home/shenxi/Datasets --dataset imagenet --seed 42 --position top9 >> log/run_inet_onlytop9_42.log
 
+CUDA_VISIBLE_DEVICES=4 python main.py --root_path /datassd --dataset imagenet --seed 42 --position top1 >> log/run_inet_onlytop1_42.log
+
+CUDA_VISIBLE_DEVICES=4 python main.py --root_path /datassd --dataset imagenet --seed 42 --position top2 >> log/run_inet_onlytop2_42.log
+
 ## Larger R
 
-CUDA_VISIBLE_DEVICES=4 python main.py --root_path /datassd --dataset imagenet --seed 42 --r 3 >> log/run_inet_allr3_42.log
+CUDA_VISIBLE_DEVICES=4 python main.py --root_path /datassd --dataset imagenet --seed 42 --r 4 >> log/run_inet_allr4_42.log
+
+CUDA_VISIBLE_DEVICES=4 python main.py --root_path /datassd --dataset imagenet --seed 42 --r 8 >> log/run_inet_allr8_42.log

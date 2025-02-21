@@ -296,3 +296,19 @@ Residual Attention Block 11: ResidualAttentionBlock(
   )
   (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
 )
+LR: 0.000198, Acc: 61.1562, Loss: 1.6001
+LR: 0.000192, Acc: 63.4937, Loss: 1.4683
+LR: 0.000183, Acc: 65.0625, Loss: 1.3872
+LR: 0.000171, Acc: 66.4500, Loss: 1.3506
+LR: 0.000156, Acc: 67.6875, Loss: 1.2836
+LR: 0.000139, Acc: 68.6750, Loss: 1.2343
+LR: 0.000120, Acc: 69.2687, Loss: 1.2024
+LR: 0.000101, Acc: 69.7125, Loss: 1.1850
+LR: 0.000081, Acc: 69.6625, Loss: 1.1648
+LR: 0.000062, Acc: 70.5500, Loss: 1.1440
+LR: 0.000045, Acc: 71.3250, Loss: 1.1203
+LR: 0.000030, Acc: 71.5000, Loss: 1.0961
+LR: 0.000018, Acc: 71.8812, Loss: 1.0963
+LR: 0.000009, Acc: 71.8875, Loss: 1.0919
+LR: 0.000003, Acc: 72.3688, Loss: 1.0779
+**** Final test accuracy: 73.57. ****

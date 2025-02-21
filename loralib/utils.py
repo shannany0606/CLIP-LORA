@@ -23,7 +23,8 @@ INDEX_POSITIONS_TEXT = {
 
 INDEX_POSITIONS_VISION = {
     'ViT-B/16': {
-        'top': [11],
+        'top1': [11],
+        'top2': [10, 11],
         'top3': [9, 10, 11],
         'top6': [6, 7, 8, 9, 10, 11],
         'top9': [3, 4, 5, 6, 7, 8, 9, 10, 11],

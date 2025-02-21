@@ -1,0 +1,314 @@
+Preparing dataset.
+
+Getting textual features as CLIP's classifier.
+
+Loading visual features and labels from val set.
+
+Loading visual features and labels from test set.
+
+**** Zero-shot CLIP's test accuracy: 66.74. ****
+
+Residual Attention Block 0: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 1: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 2: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 3: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 4: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 5: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 6: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 7: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 8: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 9: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 10: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 11: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 0: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 1: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 2: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 3: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 4: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 5: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 6: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 7: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 8: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 9: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 10: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 11: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+LR: 0.000198, Acc: 59.0500, Loss: 1.7231
+LR: 0.000192, Acc: 60.0812, Loss: 1.6538
+LR: 0.000183, Acc: 60.8438, Loss: 1.6110
+LR: 0.000171, Acc: 61.1125, Loss: 1.5890
+LR: 0.000156, Acc: 61.6562, Loss: 1.5836
+LR: 0.000139, Acc: 61.7313, Loss: 1.5499
+LR: 0.000120, Acc: 62.3188, Loss: 1.5323
+LR: 0.000101, Acc: 62.5187, Loss: 1.5379
+LR: 0.000081, Acc: 61.9250, Loss: 1.5432
+LR: 0.000062, Acc: 62.3500, Loss: 1.5446
+LR: 0.000045, Acc: 62.8312, Loss: 1.5239
+LR: 0.000030, Acc: 62.4875, Loss: 1.5297
+LR: 0.000018, Acc: 62.3813, Loss: 1.5280
+LR: 0.000009, Acc: 62.7250, Loss: 1.5139
+LR: 0.000003, Acc: 62.1625, Loss: 1.5376
+**** Final test accuracy: 70.85. ****
