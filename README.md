@@ -24,6 +24,8 @@ CUDA_VISIBLE_DEVICES=3 python main.py --root_path /home/shenxi/Datasets --datase
 
 CUDA_VISIBLE_DEVICES=0 python main.py --root_path /home/shenxi/Datasets --dataset imagenet --seed 42 --params v >> log/run_Inet_rm_qk_42.log
 
+CUDA_VISIBLE_DEVICES=0 python main.py --root_path /datassd --dataset imagenet --seed 42 --params q k v o >> log/run_Inet_addo_42.log
+
 ## Remove LoRA on text encoder
 
 CUDA_VISIBLE_DEVICES=0 python main.py --root_path /home/shenxi/Datasets --dataset stanford_cars --seed 42 --encoder vision >> log/run_car_rm_text_42.log
