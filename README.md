@@ -47,3 +47,7 @@ CUDA_VISIBLE_DEVICES=4 python main.py --root_path /datassd --dataset imagenet --
 CUDA_VISIBLE_DEVICES=4 python main.py --root_path /datassd --dataset imagenet --seed 42 --r 4 >> log/run_inet_allr4_42.log
 
 CUDA_VISIBLE_DEVICES=4 python main.py --root_path /datassd --dataset imagenet --seed 42 --r 8 >> log/run_inet_allr8_42.log
+
+## More iters
+
+CUDA_VISIBLE_DEVICES=4 python main.py --root_path /datassd --dataset imagenet --seed 42 --n_iters 750 >> log/run_inet_iters750_42.log
