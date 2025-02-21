@@ -189,7 +189,8 @@ imagenet_templates = ["a photo of a {}."]
 
 class ImageNet():
 
-    dataset_dir = 'imagenet'
+    #dataset_dir = 'imagenet'
+    dataset_dir = 'Inet1K'
 
     def __init__(self, root, num_shots, preprocess, train_preprocess=None, test_preprocess=None):
 
