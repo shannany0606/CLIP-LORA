@@ -28,6 +28,7 @@ def get_arguments():
     parser.add_argument('--lr', default=2e-4, type=float)
     parser.add_argument('--n_iters', default=500, type=int)
     parser.add_argument('--batch_size', default=32, type=int)
+    parser.add_argument('--weight_decay', default=1e-2, type=float)
     # LoRA arguments
     parser.add_argument('--position', type=str, default='all', choices=['bottom', 'mid', 'up', 'half-up', 'half-bottom', 'all', 'top1', 'top2', 'top3', 'top6', 'top9'], help='where to put the LoRA modules')
     parser.add_argument('--encoder', type=str, choices=['text', 'vision', 'both'], default='both')

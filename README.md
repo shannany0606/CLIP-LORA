@@ -24,7 +24,7 @@ CUDA_VISIBLE_DEVICES=3 python main.py --root_path /home/shenxi/Datasets --datase
 
 CUDA_VISIBLE_DEVICES=0 python main.py --root_path /home/shenxi/Datasets --dataset imagenet --seed 42 --params v >> log/run_Inet_rm_qk_42.log
 
-CUDA_VISIBLE_DEVICES=0 python main.py --root_path /datassd --dataset imagenet --seed 42 --params q k v o >> log/run_Inet_addo_42.log
+CUDA_VISIBLE_DEVICES=0 python main.py --root_path /datassd --dataset imagenet --seed 42 --params q k v o --batch_size 16 >> log/run_Inet_addo_42.log
 
 ## Remove LoRA on text encoder
 
@@ -53,3 +53,7 @@ CUDA_VISIBLE_DEVICES=4 python main.py --root_path /datassd --dataset imagenet --
 ## More iters
 
 CUDA_VISIBLE_DEVICES=0 python main.py --root_path /datassd --dataset imagenet --seed 42 --n_iters 750 >> log/run_inet_iters750_42.log
+
+## Remove weight decay
+
+CUDA_VISIBLE_DEVICES=0 python main.py --root_path /datassd --dataset imagenet --seed 42 --weight_decay 0 >> log/run_inet_weightdecay0_42.log
