@@ -1,5 +1,7 @@
 # CLIP-LORA
 
+This project is cloned from https://github.com/MaxZanella/CLIP-LoRA.
+
 ## Reproduce
 
 CUDA_VISIBLE_DEVICES=5 python main.py --root_path /home/shenxi/Datasets --dataset food101 --seed 42 >> log/run_food_ema42.log
